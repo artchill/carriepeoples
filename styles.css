@@ -1,0 +1,132 @@
+/* =========================================================
+   Carrie Peoples' Reading System — Shared Site Styles
+   Used by: index.html, book.html, author.html, reviews.html, contact.html
+   ========================================================= */
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Quicksand', system-ui, sans-serif;
+  color: #2D2A4A;
+  background: #FFF8E7;
+}
+h1, h2, h3, h4, .display {
+  font-family: 'Fredoka', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Polka-dot background pattern */
+.dots-bg {
+  background-image: radial-gradient(#FFD23F 2px, transparent 2px),
+                    radial-gradient(#4ECDC4 2px, transparent 2px);
+  background-size: 40px 40px, 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Wavy underline for emphasis */
+.squiggle {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M0 6 Q 15 0 30 6 T 60 6 T 90 6 T 120 6' stroke='%23FF6B6B' stroke-width='4' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 0.4em;
+  padding-bottom: 0.5em;
+}
+
+/* Hand-drawn circle highlight */
+.circle-mark { position: relative; display: inline-block; }
+.circle-mark::after {
+  content: "";
+  position: absolute;
+  inset: -8px -14px;
+  border: 4px solid #FF6B6B;
+  border-radius: 50%;
+  transform: rotate(-3deg);
+  pointer-events: none;
+}
+
+/* Cloud / thought bubble cards */
+.cloud-card {
+  background: white;
+  border-radius: 40px;
+  border: 4px solid #2D2A4A;
+  position: relative;
+}
+
+/* Tape effect for review cards */
+.tape::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 28px;
+  background: rgba(255, 210, 63, 0.85);
+  border: 1px dashed rgba(45, 42, 74, 0.3);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Pop-shadow button hover */
+.btn-pop { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.btn-pop:hover { transform: translate(-2px, -2px); }
+.btn-pop:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 0 #2D2A4A !important;
+}
+
+/* Marquee strip animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 30s linear infinite; }
+
+/* Floating ABC blocks decoration */
+.letter-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  border: 3px solid #2D2A4A;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  box-shadow: 4px 4px 0 0 #2D2A4A;
+}
+
+/* Tailwind-style shorthand helpers (since shared with all pages) */
+.border-3 { border-width: 3px; }
+
+/* Page banner used on inner pages */
+.page-banner {
+  position: relative;
+  padding: 4rem 1.5rem 5rem;
+  text-align: center;
+  background: linear-gradient(180deg, #FFF8E7 0%, rgba(78,205,196,0.18) 100%);
+  border-bottom: 4px solid #2D2A4A;
+  overflow: hidden;
+}
+
+/* Form inputs */
+.form-field {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border: 4px solid #2D2A4A;
+  border-radius: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  background: #FFFFFF;
+  color: #2D2A4A;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 4px 4px 0 0 #2D2A4A;
+}
+.form-field:focus {
+  outline: none;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 #FF6B6B;
+  border-color: #FF6B6B;
+}
+.form-field::placeholder { color: rgba(45, 42, 74, 0.45); }
+textarea.form-field { min-height: 160px; resize: vertical; }

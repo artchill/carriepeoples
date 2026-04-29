@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reviews & Press — Carrie Peoples' Reading System</title>
+<meta name="description" content="Read what reviewers and press are saying about From Babble to Reading — Carrie Peoples' Reading System." />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { display:['Fredoka','system-ui','sans-serif'], body:['Quicksand','system-ui','sans-serif'] },
+        colors: { sunny:'#FFD23F', coral:'#FF6B6B', sky:'#4ECDC4', berry:'#7B5EA7', grass:'#7DD87D', cream:'#FFF8E7', inky:'#2D2A4A' },
+        boxShadow: { 'pop':'6px 6px 0 0 #2D2A4A', 'pop-sm':'4px 4px 0 0 #2D2A4A', 'pop-lg':'10px 10px 0 0 #2D2A4A' },
+        keyframes: { float: { '0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-12px)'} } },
+        animation: { float:'float 5s ease-in-out infinite' }
+      }
+    }
+  }
+</script>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- =============== NAVBAR =============== -->
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b-4 border-inky">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="letter-block bg-sunny" style="width:42px;height:42px;font-size:22px;">C</span>
+      <span class="font-display font-bold text-xl text-inky leading-tight">Carrie<br><span class="text-coral">Peoples</span></span>
+    </a>
+    <ul class="hidden md:flex items-center gap-8 font-display font-medium text-inky">
+      <li><a href="index.html"   class="hover:text-coral transition-colors">Home</a></li>
+      <li><a href="book.html"    class="hover:text-coral transition-colors">The Book</a></li>
+      <li><a href="author.html"  class="hover:text-coral transition-colors">Authors</a></li>
+      <li><a href="reviews.html" class="text-coral border-b-2 border-coral">Reviews</a></li>
+      <li><a href="contact.html" class="hover:text-coral transition-colors">Contact</a></li>
+    </ul>
+    <a href="https://www.amazon.com/Babble-Reading-Carrie-Peoples-System-ebook/dp/B0GHZXRMY2/" target="_blank" rel="noopener" class="hidden sm:inline-block bg-coral text-white font-display font-semibold px-5 py-2.5 rounded-full border-4 border-inky shadow-pop-sm btn-pop">Buy the Book</a>
+  </nav>
+</header>
+
+<!-- =============== PAGE BANNER =============== -->
+<section class="page-banner">
+  <div class="absolute inset-0 dots-bg opacity-20 pointer-events-none"></div>
+  <div class="hidden md:block absolute top-12 left-12 letter-block bg-sunny text-inky animate-float">★</div>
+  <div class="hidden md:block absolute top-20 right-16 letter-block bg-coral text-white animate-float" style="animation-delay:0.6s">✦</div>
+  <div class="hidden md:block absolute bottom-12 right-32 letter-block bg-grass text-inky animate-float" style="animation-delay:1.2s">★</div>
+
+  <div class="relative max-w-4xl mx-auto">
+    <span class="inline-block bg-berry text-white font-display font-semibold px-4 py-1.5 rounded-full border-3 border-inky shadow-pop-sm text-sm mb-4">Press &amp; Reviews</span>
+    <h1 class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-inky leading-[1.05] mb-4">
+      What people are <span class="text-coral">saying.</span>
+    </h1>
+    <p class="text-lg sm:text-xl text-inky/80 max-w-2xl mx-auto font-medium">
+      Coverage, reviews, and recognition for <em>From Babble to Reading</em>.
+    </p>
+  </div>
+</section>
+
+<!-- =============== FEATURED REVIEWS =============== -->
+<section class="py-20 bg-cream relative">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- USRB Highlight -->
+    <div class="bg-white border-4 border-inky rounded-3xl shadow-pop-lg p-8 sm:p-12 mb-12 relative overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-sunny rounded-full opacity-40"></div>
+      <div class="relative grid lg:grid-cols-3 gap-8 items-center">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4 flex-wrap">
+            <span class="bg-sunny px-3 py-1 rounded-full border-3 border-inky font-display font-semibold text-sm">★ Featured Review</span>
+            <span class="bg-coral text-white px-3 py-1 rounded-full border-3 border-inky font-display font-semibold text-sm">Recommended</span>
+          </div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-inky mb-3">US Review of Books</h2>
+          <p class="text-lg text-inky/85 leading-relaxed mb-6">
+            <em>Carrie Peoples' Reading System</em> received a <strong>"Recommended"</strong> rating from The US Review of Books — an honored independent reviewer of new releases for libraries, educators, and readers.
+          </p>
+          <a href="https://www.theusreview.com/reviews-1/Carrie-Peoples-Reading-System-by-Carrie-E-Peoples.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coral text-white font-display font-bold px-6 py-3 rounded-2xl border-4 border-inky shadow-pop btn-pop">
+            Read the full review →
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-40 h-40 rounded-full border-4 border-inky bg-cream flex flex-col items-center justify-center text-center p-4 shadow-pop animate-float">
+            <span class="font-display font-bold text-3xl text-coral">USRB</span>
+            <span class="font-display text-xs text-inky/70">US Review of Books</span>
+            <span class="font-display font-bold text-sm text-inky mt-1">RECOMMENDED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Press Release -->
+    <div class="bg-grass/30 border-4 border-inky rounded-3xl shadow-pop-lg p-8 sm:p-12 relative overflow-hidden">
+      <div class="absolute -top-10 -left-10 w-40 h-40 bg-sky rounded-full opacity-40"></div>
+      <div class="relative grid lg:grid-cols-3 gap-8 items-center">
+        <div class="flex justify-center lg:order-2">
+          <div class="w-40 h-40 rounded-full border-4 border-inky bg-white flex flex-col items-center justify-center text-center p-4 shadow-pop animate-float" style="animation-delay:1s">
+            <span class="text-4xl mb-1">📰</span>
+            <span class="font-display font-bold text-sm text-inky">PRESS RELEASE</span>
+          </div>
+        </div>
+        <div class="lg:col-span-2 lg:order-1">
+          <div class="flex items-center gap-3 mb-4 flex-wrap">
+            <span class="bg-grass px-3 py-1 rounded-full border-3 border-inky font-display font-semibold text-sm">📰 Press Release</span>
+            <span class="bg-white px-3 py-1 rounded-full border-3 border-inky font-display font-semibold text-sm">In Real World</span>
+          </div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-inky mb-3">Empowering children through simplicity &amp; play</h2>
+          <p class="text-lg text-inky/85 leading-relaxed mb-6">
+            The official press release for <em>From Babble to Reading</em> — covering the philosophy behind the system, what makes it different, and the impact it's already having in classrooms.
+          </p>
+          <a href="https://inrealworld.com/news/from-babble-to-reading-carrie-peoples-reading-system-empowers-children-to-learn-through-simplicity-and-play/0536688" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-berry text-white font-display font-bold px-6 py-3 rounded-2xl border-4 border-inky shadow-pop btn-pop">
+            Read the press release →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== READER QUOTES =============== -->
+<section class="py-20 bg-sky/20 border-y-4 border-inky relative">
+  <div class="absolute inset-0 dots-bg opacity-10 pointer-events-none"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-coral text-white font-display font-semibold px-4 py-1.5 rounded-full border-3 border-inky shadow-pop-sm text-sm mb-4">In Their Own Words</span>
+      <h2 class="font-display font-bold text-4xl sm:text-5xl text-inky">A path worth recommending.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <figure class="relative bg-white border-4 border-inky rounded-3xl p-8 pt-12 shadow-pop tape">
+        <div class="text-5xl text-coral leading-none font-display mb-2">"</div>
+        <blockquote class="font-display font-medium text-xl text-inky leading-snug mb-4">
+          A joyful, structured path from a child's first babble to confident reading — one circle, line, and dot at a time.
+        </blockquote>
+        <figcaption class="font-display font-semibold text-coral">— Editorial summary</figcaption>
+      </figure>
+
+      <figure class="relative bg-white border-4 border-inky rounded-3xl p-8 pt-12 shadow-pop tape md:mt-8">
+        <div class="text-5xl text-berry leading-none font-display mb-2">"</div>
+        <blockquote class="font-display font-medium text-xl text-inky leading-snug mb-4">
+          Empowers children to learn through simplicity and play — turning early reading into something kids actually look forward to.
+        </blockquote>
+        <figcaption class="font-display font-semibold text-berry">— Press coverage</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =============== NEWS UPDATES PLACEHOLDER =============== -->
+<section class="py-20 bg-cream">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <span class="inline-block bg-sunny text-inky font-display font-semibold px-4 py-1.5 rounded-full border-3 border-inky shadow-pop-sm text-sm mb-4">News &amp; Updates</span>
+    <h2 class="font-display font-bold text-4xl sm:text-5xl text-inky mb-4">More coverage coming soon.</h2>
+    <p class="text-lg text-inky/80 max-w-2xl mx-auto mb-8">
+      Carrie's work is reaching new audiences every month. Want to feature the book or interview the author?
+    </p>
+    <a href="contact.html" class="inline-block bg-coral text-white font-display font-bold text-lg px-7 py-4 rounded-2xl border-4 border-inky shadow-pop btn-pop">
+      Press inquiries →
+    </a>
+  </div>
+</section>
+
+<!-- =============== CTA =============== -->
+<section class="py-16 bg-coral border-y-4 border-inky relative overflow-hidden">
+  <div class="absolute inset-0 dots-bg opacity-15 pointer-events-none"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+    <h2 class="font-display font-bold text-4xl sm:text-5xl mb-4">See for yourself.</h2>
+    <p class="text-lg sm:text-xl mb-8 opacity-95 max-w-2xl mx-auto">Pick up your copy and discover why reviewers are recommending it.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://www.amazon.com/Babble-Reading-Carrie-Peoples-System-ebook/dp/B0GHZXRMY2/" target="_blank" rel="noopener" class="bg-white text-inky font-display font-bold text-lg px-6 py-3 rounded-2xl border-4 border-inky shadow-pop btn-pop">Kindle Edition</a>
+      <a href="https://www.amazon.com/Babble-Reading-Carrie-Peoples-System/dp/196942236X/" target="_blank" rel="noopener" class="bg-sunny text-inky font-display font-bold text-lg px-6 py-3 rounded-2xl border-4 border-inky shadow-pop btn-pop">Paperback</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer class="bg-inky text-cream py-16 relative overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-80 h-80 bg-berry rounded-full opacity-20 blur-3xl"></div>
+  <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-coral rounded-full opacity-20 blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="letter-block bg-sunny text-inky">C</span>
+          <span class="font-display font-bold text-2xl">Carrie Peoples</span>
+        </div>
+        <p class="opacity-80 leading-relaxed">From babble to reading — a joyful, simple path to early literacy for every child.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-xl mb-4 text-sunny">Get in Touch</h4>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><span class="text-coral text-xl">✉</span><a href="mailto:perfectlycarrie@gmail.com" class="hover:text-sunny transition-colors break-all">perfectlycarrie@gmail.com</a></li>
+          <li class="flex items-start gap-3"><span class="text-coral text-xl">☎</span><a href="tel:+16784801940" class="hover:text-sunny transition-colors">+1 (678) 480-1940</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-xl mb-4 text-sunny">Explore</h4>
+        <ul class="space-y-2 opacity-90">
+          <li><a href="book.html"    class="hover:text-coral transition-colors">The Book</a></li>
+          <li><a href="author.html"  class="hover:text-coral transition-colors">The Authors</a></li>
+          <li><a href="reviews.html" class="hover:text-coral transition-colors">Reviews & Press</a></li>
+          <li><a href="contact.html" class="hover:text-coral transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t-2 border-cream/20 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm opacity-70">
+      <p>© 2026 Carrie Peoples. All rights reserved.</p>
+      <p class="font-display">www.carriepeoples.com</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

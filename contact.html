@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Carrie Peoples' Reading System</title>
+<meta name="description" content="Get in touch with Carrie Peoples — for press inquiries, speaking invitations, school visits, or general questions about the reading system." />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { display:['Fredoka','system-ui','sans-serif'], body:['Quicksand','system-ui','sans-serif'] },
+        colors: { sunny:'#FFD23F', coral:'#FF6B6B', sky:'#4ECDC4', berry:'#7B5EA7', grass:'#7DD87D', cream:'#FFF8E7', inky:'#2D2A4A' },
+        boxShadow: { 'pop':'6px 6px 0 0 #2D2A4A', 'pop-sm':'4px 4px 0 0 #2D2A4A', 'pop-lg':'10px 10px 0 0 #2D2A4A' },
+        keyframes: { float: { '0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-12px)'} } },
+        animation: { float:'float 5s ease-in-out infinite' }
+      }
+    }
+  }
+</script>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- =============== NAVBAR =============== -->
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b-4 border-inky">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="letter-block bg-sunny" style="width:42px;height:42px;font-size:22px;">C</span>
+      <span class="font-display font-bold text-xl text-inky leading-tight">Carrie<br><span class="text-coral">Peoples</span></span>
+    </a>
+    <ul class="hidden md:flex items-center gap-8 font-display font-medium text-inky">
+      <li><a href="index.html"   class="hover:text-coral transition-colors">Home</a></li>
+      <li><a href="book.html"    class="hover:text-coral transition-colors">The Book</a></li>
+      <li><a href="author.html"  class="hover:text-coral transition-colors">Authors</a></li>
+      <li><a href="reviews.html" class="hover:text-coral transition-colors">Reviews</a></li>
+      <li><a href="contact.html" class="text-coral border-b-2 border-coral">Contact</a></li>
+    </ul>
+    <a href="https://www.amazon.com/Babble-Reading-Carrie-Peoples-System-ebook/dp/B0GHZXRMY2/" target="_blank" rel="noopener" class="hidden sm:inline-block bg-coral text-white font-display font-semibold px-5 py-2.5 rounded-full border-4 border-inky shadow-pop-sm btn-pop">Buy the Book</a>
+  </nav>
+</header>
+
+<!-- =============== PAGE BANNER =============== -->
+<section class="page-banner">
+  <div class="absolute inset-0 dots-bg opacity-20 pointer-events-none"></div>
+  <div class="hidden md:block absolute top-12 left-12 letter-block bg-coral text-white animate-float">✉</div>
+  <div class="hidden md:block absolute top-20 right-16 letter-block bg-sunny text-inky animate-float" style="animation-delay:0.6s">★</div>
+  <div class="hidden md:block absolute bottom-12 right-32 letter-block bg-sky text-inky animate-float" style="animation-delay:1.2s">☎</div>
+
+  <div class="relative max-w-4xl mx-auto">
+    <span class="inline-block bg-coral text-white font-display font-semibold px-4 py-1.5 rounded-full border-3 border-inky shadow-pop-sm text-sm mb-4">Get in Touch</span>
+    <h1 class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-inky leading-[1.05] mb-4">
+      Let's <span class="squiggle">connect.</span>
+    </h1>
+    <p class="text-lg sm:text-xl text-inky/80 max-w-2xl mx-auto font-medium">
+      Press inquiries, speaking invitations, school visits, or just a friendly hello — we'd love to hear from you.
+    </p>
+  </div>
+</section>
+
+<!-- =============== CONTACT GRID =============== -->
+<section class="py-20 bg-cream">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-5 gap-10">
+
+    <!-- Contact Info Column -->
+    <aside class="lg:col-span-2 space-y-6">
+      <div class="bg-white border-4 border-inky rounded-3xl p-6 shadow-pop">
+        <div class="w-14 h-14 rounded-2xl border-4 border-inky bg-coral flex items-center justify-center text-white text-2xl mb-4">✉</div>
+        <h3 class="font-display font-bold text-xl mb-1">Email</h3>
+        <a href="mailto:perfectlycarrie@gmail.com" class="text-inky/80 hover:text-coral transition-colors break-all">perfectlycarrie@gmail.com</a>
+      </div>
+
+      <div class="bg-white border-4 border-inky rounded-3xl p-6 shadow-pop">
+        <div class="w-14 h-14 rounded-2xl border-4 border-inky bg-sunny flex items-center justify-center text-2xl mb-4">☎</div>
+        <h3 class="font-display font-bold text-xl mb-1">Phone</h3>
+        <a href="tel:+16784801940" class="text-inky/80 hover:text-coral transition-colors">+1 (678) 480-1940</a>
+      </div>
+
+      <div class="bg-berry text-white border-4 border-inky rounded-3xl p-6 shadow-pop">
+        <div class="w-14 h-14 rounded-2xl border-4 border-inky bg-sunny flex items-center justify-center text-2xl mb-4">📚</div>
+        <h3 class="font-display font-bold text-xl mb-2 text-white">Bulk &amp; Classroom Orders</h3>
+        <p class="opacity-90 text-sm leading-relaxed">Educators and schools — reach out to discuss classroom sets, training, or speaking engagements.</p>
+      </div>
+
+      <div class="bg-grass border-4 border-inky rounded-3xl p-6 shadow-pop">
+        <div class="w-14 h-14 rounded-2xl border-4 border-inky bg-white flex items-center justify-center text-2xl mb-4">⏱</div>
+        <h3 class="font-display font-bold text-xl mb-2">Response Time</h3>
+        <p class="text-inky/85 text-sm leading-relaxed">We aim to respond within 1–2 business days. For urgent press inquiries, please mention "Press" in your subject.</p>
+      </div>
+    </aside>
+
+    <!-- Contact Form -->
+    <div class="lg:col-span-3">
+      <div class="bg-white border-4 border-inky rounded-3xl p-8 sm:p-10 shadow-pop-lg relative overflow-hidden">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-sunny rounded-full opacity-30"></div>
+
+        <div class="relative">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-inky mb-2">Send a message</h2>
+          <p class="text-inky/70 mb-8">Fill out the form and we'll get back to you soon.</p>
+
+          <!--
+            =====================================================================
+            FORM SETUP REQUIRED — quick (free) one-time setup, ~2 minutes:
+
+            1. Go to https://formspree.io and sign up (free tier is plenty)
+            2. Click "+ New Form"
+            3. Set the recipient email to: paul.finch@olympusstoryhouse.com
+            4. Formspree will give you a form endpoint URL like:
+                  https://formspree.io/f/abcd1234
+            5. Replace the action="..." URL below with that endpoint
+            6. Save & commit. Done — submissions will email Paul automatically.
+
+            Until step 5 is done, the form will submit but won't deliver.
+            =====================================================================
+          -->
+          <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID"
+                method="POST" class="space-y-5">
+
+            <!-- Hidden fields to make the email easier to read on Paul's end -->
+            <input type="hidden" name="_subject" value="New message from carriepeoples.com" />
+            <input type="hidden" name="_replyto" />
+
+            <!-- Honeypot anti-spam field (hidden from real users) -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="block font-display font-semibold text-inky mb-2">Your Name <span class="text-coral">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="Jane Doe" class="form-field" />
+              </div>
+              <div>
+                <label for="email" class="block font-display font-semibold text-inky mb-2">Email <span class="text-coral">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com" class="form-field" />
+              </div>
+            </div>
+
+            <div>
+              <label for="role" class="block font-display font-semibold text-inky mb-2">I am a... <span class="text-coral">*</span></label>
+              <select id="role" name="role" required class="form-field">
+                <option value="">Choose one</option>
+                <option>Parent</option>
+                <option>Teacher / Educator</option>
+                <option>School Administrator</option>
+                <option>Press / Media</option>
+                <option>Bookseller / Distributor</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="subject" class="block font-display font-semibold text-inky mb-2">Subject <span class="text-coral">*</span></label>
+              <input type="text" id="subject" name="subject" required placeholder="Speaking invitation, classroom orders, etc." class="form-field" />
+            </div>
+
+            <div>
+              <label for="message" class="block font-display font-semibold text-inky mb-2">Your Message <span class="text-coral">*</span></label>
+              <textarea id="message" name="message" required placeholder="Tell us a little about how we can help..." class="form-field"></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+              <p class="text-sm text-inky/60">By submitting, you consent to being contacted by email.</p>
+              <button type="submit" class="bg-coral text-white font-display font-bold text-lg px-8 py-4 rounded-2xl border-4 border-inky shadow-pop btn-pop inline-flex items-center justify-center gap-2">
+                Send Message →
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FAQ =============== -->
+<section class="py-20 bg-sky/20 border-y-4 border-inky relative">
+  <div class="absolute inset-0 dots-bg opacity-10 pointer-events-none"></div>
+  <div class="relative max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <span class="inline-block bg-sunny text-inky font-display font-semibold px-4 py-1.5 rounded-full border-3 border-inky shadow-pop-sm text-sm mb-4">Quick Answers</span>
+      <h2 class="font-display font-bold text-4xl sm:text-5xl text-inky">Frequently asked.</h2>
+    </div>
+
+    <div class="space-y-4">
+      <details class="bg-white border-4 border-inky rounded-3xl p-6 shadow-pop cursor-pointer group">
+        <summary class="font-display font-bold text-xl text-inky list-none flex justify-between items-center">
+          Where can I buy the book?
+          <span class="text-coral text-2xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-4 text-inky/80 leading-relaxed">
+          The Kindle and Paperback editions are available on Amazon. The hardcover edition is coming soon. <a href="book.html" class="text-coral font-semibold hover:underline">See all formats →</a>
+        </p>
+      </details>
+
+      <details class="bg-white border-4 border-inky rounded-3xl p-6 shadow-pop cursor-pointer group">
+        <summary class="font-display font-bold text-xl text-inky list-none flex justify-between items-center">
+          Does Carrie do school visits or speaking events?
+          <span class="text-coral text-2xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-4 text-inky/80 leading-relaxed">
+          Yes! Carrie is available for school visits, professional development sessions, and speaking engagements. Use the form above to share details about your event.
+        </p>
+      </details>
+
+      <details class="bg-white border-4 border-inky rounded-3xl p-6 shadow-pop cursor-pointer group">
+        <summary class="font-display font-bold text-xl text-inky list-none flex justify-between items-center">
+          Can I order copies for my classroom or school?
+          <span class="text-coral text-2xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-4 text-inky/80 leading-relaxed">
+          Absolutely. Mention your school and approximate quantity in the form, and we'll be in touch to discuss bulk pricing and shipping.
+        </p>
+      </details>
+
+      <details class="bg-white border-4 border-inky rounded-3xl p-6 shadow-pop cursor-pointer group">
+        <summary class="font-display font-bold text-xl text-inky list-none flex justify-between items-center">
+          I'm a journalist — how do I request a review copy?
+          <span class="text-coral text-2xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-4 text-inky/80 leading-relaxed">
+          Select "Press / Media" in the form and include your outlet, audience size, and deadline. We'll respond as quickly as we can.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer class="bg-inky text-cream py-16 relative overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-80 h-80 bg-berry rounded-full opacity-20 blur-3xl"></div>
+  <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-coral rounded-full opacity-20 blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="letter-block bg-sunny text-inky">C</span>
+          <span class="font-display font-bold text-2xl">Carrie Peoples</span>
+        </div>
+        <p class="opacity-80 leading-relaxed">From babble to reading — a joyful, simple path to early literacy for every child.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-xl mb-4 text-sunny">Get in Touch</h4>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><span class="text-coral text-xl">✉</span><a href="mailto:perfectlycarrie@gmail.com" class="hover:text-sunny transition-colors break-all">perfectlycarrie@gmail.com</a></li>
+          <li class="flex items-start gap-3"><span class="text-coral text-xl">☎</span><a href="tel:+16784801940" class="hover:text-sunny transition-colors">+1 (678) 480-1940</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-xl mb-4 text-sunny">Explore</h4>
+        <ul class="space-y-2 opacity-90">
+          <li><a href="book.html"    class="hover:text-coral transition-colors">The Book</a></li>
+          <li><a href="author.html"  class="hover:text-coral transition-colors">The Authors</a></li>
+          <li><a href="reviews.html" class="hover:text-coral transition-colors">Reviews & Press</a></li>
+          <li><a href="contact.html" class="hover:text-coral transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t-2 border-cream/20 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm opacity-70">
+      <p>© 2026 Carrie Peoples. All rights reserved.</p>
+      <p class="font-display">www.carriepeoples.com</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
